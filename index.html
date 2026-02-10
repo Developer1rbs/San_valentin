@@ -60,17 +60,17 @@
 </head>
 
 <body>
-<div class="card">
-  <h1>💌 Bren…</h1>
-<p>
-  Quiero decirte algo 😌  
-  <br>
-  ya que no pudimos irnos de viaje,  
-  <br>
-  me encantaría preguntarte algo importante 😌  
-  <br><br>
-  <strong>¿Quieres ser mi San Valentín? 💖</strong>
-</p>
+  <div class="card">
+    <h1>💌 Bren…</h1>
+    <p>
+      Quiero decirte algo 😌  
+      <br>
+      ya que no pudimos irnos de viaje pero.....  
+      <br>
+      me encantaría preguntarte algo importante 😌  
+      <br><br>
+      <strong>¿Quieres ser mi San Valentín? 💖</strong>
+    </p>
 
     <button id="yesBtn" onclick="sayYes()">Sí 💘</button>
     <button id="noBtn" onmouseover="moveButton()">No 🙈</button>
@@ -80,7 +80,7 @@
     function sayYes() {
       const phone = "5215565045930";
       const message = encodeURIComponent(
-        💖 Sí, claro que sí… me encantaría 💕
+        "💖 Sí, claro que sí… me encantaría 💕"
       );
 
       window.location.href = `https://wa.me/${phone}?text=${message}`;
@@ -93,6 +93,5 @@
       btn.style.transform = `translate(${x}px, ${y}px)`;
     }
   </script>
-
 </body>
 </html>
