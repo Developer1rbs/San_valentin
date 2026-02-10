@@ -4,11 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>💖 Tengo una pregunta para ti</title>
+
   <style>
     body {
       margin: 0;
       height: 100vh;
-      font-family: 'Arial', sans-serif;
+      font-family: Arial, sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -22,7 +23,7 @@
       padding: 30px;
       border-radius: 20px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-      max-width: 350px;
+      max-width: 360px;
       width: 90%;
     }
 
@@ -38,7 +39,7 @@
 
     button {
       border: none;
-      padding: 12px 20px;
+      padding: 12px 22px;
       font-size: 1em;
       border-radius: 30px;
       cursor: pointer;
@@ -57,14 +58,17 @@
     }
   </style>
 </head>
+
 <body>
 
   <div class="card">
-    <h1>💌 Oye…</h1>
+    <h1>💌 Bren…</h1>
     <p>
-      Desde que te conocí, tengo ganas de preguntarte algo importante 😌  
+      Tengo que confesarte algo 😌  
+      <br>
+      desde hace días quería preguntarte esto…  
       <br><br>
-      ¿Quieres ser mi San Valentín? 💖
+      <strong>¿Quieres ser mi San Valentín? 💖</strong>
     </p>
 
     <button id="yesBtn" onclick="sayYes()">Sí 💘</button>
@@ -73,24 +77,12 @@
 
   <script>
     function sayYes() {
-      document.body.innerHTML = `
-        <div style="
-          display:flex;
-          flex-direction:column;
-          justify-content:center;
-          align-items:center;
-          height:100vh;
-          background:linear-gradient(135deg,#ff758c,#ff7eb3);
-          color:white;
-          text-align:center;
-          font-family:Arial;
-        ">
-          <h1>💖 Sabía que dirías que sí 💖</h1>
-          <p style="font-size:1.3em;">
-            Prometo que será un San Valentín inolvidable 😏✨
-          </p>
-        </div>
-      `;
+      const phone = "5215565045930";
+      const message = encodeURIComponent(
+        "😏💘 Dije que sí… oficialmente soy tu San Valentín. ¿Cuál es el plan?"
+      );
+
+      window.location.href = `https://wa.me/${phone}?text=${message}`;
     }
 
     function moveButton() {
